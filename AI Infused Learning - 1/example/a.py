@@ -9,7 +9,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="llama-3.3-70b-versatile",        # a free Llama model on Groq
+    model="openai/gpt-oss-20b",
     messages=[
         {"role": "system", "content": "You are a funny joke teller."},
         {"role": "user",   "content": "Tell me a joke."},
